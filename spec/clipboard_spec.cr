@@ -1,9 +1,10 @@
 require "./spec_helper"
 
 describe Clipboard do
-  # TODO: Write tests
 
   it "works" do
-    false.should eq false
+    success = Clipboard.set_text("Some text")
+    current_clipboard_text = Clipboard.get_text()
+    Clipboard.clear()
   end
 end
