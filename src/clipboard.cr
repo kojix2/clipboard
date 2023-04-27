@@ -1,5 +1,5 @@
 module Clipboard
-    @[Link(ldflags: "-L/lib/ -I/lib/ -lclipboard -lxcb")]
+    @[Link("libclipboard")]
     lib LibClip
         type ClipboardC = Void*
         type ClipboardOpts = Void*
