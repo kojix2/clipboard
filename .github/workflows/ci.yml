@@ -18,4 +18,5 @@ jobs:
           make -j4
           sudo make install
       - run: shards install
+      - run: pkg-config --libs --cflags libclipboard
       - run: crystal spec
